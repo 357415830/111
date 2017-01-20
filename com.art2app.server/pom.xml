@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.art2app</groupId>
+    <artifactId>com.art2app</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <relativePath>../com.art2app/pom.xml</relativePath>
+  </parent>
+
+  <artifactId>com.art2app.server</artifactId>
+
+  <name>ART2APP Server</name>
+
+  <dependencies>
+    <dependency>
+      <artifactId>org.eclipse.scout.rt.server</artifactId>
+      <groupId>org.eclipse.scout.rt</groupId>
+    </dependency>
+    <dependency>
+      <groupId>com.art2app</groupId>
+      <artifactId>com.art2app.shared</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.eclipse.scout.rt</groupId>
+      <artifactId>org.eclipse.scout.rt.server.test</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>javax.servlet-api</artifactId>
+    </dependency>
+     <dependency>
+      <groupId>com.art2app.generator</groupId>
+      <artifactId>com.art2app.generator.impl</artifactId>
+      <version>0.0.1-SNAPSHOT</version>
+    </dependency>
+         <dependency>
+      <groupId>com.art2app.generator</groupId>
+      <artifactId>com.art2app.generator.api</artifactId>
+      <version>0.0.1-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+		<groupId>org.apache.logging.log4j</groupId>
+		<artifactId>log4j-core</artifactId>
+		<version>2.7</version>
+	</dependency>
+    
+    	<!-- database related dependencies --> 
+    <dependency>
+      <groupId>org.eclipse.scout.rt</groupId>
+      <artifactId>org.eclipse.scout.rt.server.jdbc</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+      <version>5.1.32</version>
+    </dependency>
+  </dependencies>
+</project>
